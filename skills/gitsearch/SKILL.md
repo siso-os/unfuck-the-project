@@ -1,45 +1,8 @@
 ---
 name: gitsearch
-description: Search GitHub for code, repos, issues, and PRs. Use when looking for examples, libraries, or tracking down bugs.
-version: 1.0.0
-tags:
-  - research
-  - github
-user-invocable: true
-context: fork
-agent: Explore
-allowed-tools: Bash
+description: Compatibility pointer to the canonical Skills Hub gitsearch skill.
+canonical: agents/skills/hub/registry/skills/devops/gitsearch/SKILL.md
+status: superseded
 ---
 
-# GitHub Search
-
-You are running in a forked subagent context. Your task is to search GitHub.
-
-## Search Query
-
-$ARGUMENTS
-
-## Your Task
-
-1. Run one or more GitHub searches as appropriate:
-```bash
-# Search repositories
-gh search repos "$ARGUMENTS" --limit 10 --sort stars
-
-# Search code
-gh search code "$ARGUMENTS" --limit 10
-
-# Search issues
-gh search issues "$ARGUMENTS" --limit 10
-
-# Search PRs
-gh search prs "$ARGUMENTS" --limit 10
-```
-
-2. Summarize the top results with:
-   - Repository name and URL
-   - Star count
-   - Brief description
-   - Relevance to the query
-
-Return a concise summary of the GitHub search results.
+Load `agents/skills/hub/registry/skills/devops/gitsearch/SKILL.md` from the current sisodias/siso checkout, or the installed `gitsearch` skill. Original definition and support files: `_archive/2026-10-21-skills/library/works/unfuck-the-project/skills/gitsearch`.
